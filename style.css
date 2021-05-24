@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar {
+  background-color: #222f3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navbar_logo {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.navbar_logo i {
+  color: red;
+}
+
+.navbar_logo a {
+  color: white;
+}
+
+.navbar_icon {
+  padding-right: 15px;
+}
+
+.navbar_icon i {
+  color: white;
+  padding: 10px;
+}
+
+.main_video {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hashtags li {
+  display: inline;
+}
+
+.title li {
+  display: inline;
+}
+
+#title {
+  width: 90%;
+}
+
+#triangle {
+  width: 10%;
+}
+
+.des_icons ul {
+  display: flex;
+  justify-content: space-around;
+}
+.des_icons ul li i {
+  display: block;
+}
+
+.des_channal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.channal_logo {
+  display: flex;
+}
