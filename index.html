@@ -11,57 +11,130 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Youtube</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar_logo">
-        <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+    <!-- Header -->
+
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
       </div>
-      <div class="navbar_icon">
-        <a href="#"><i class="fas fa-search"></i></a>
-        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
       </div>
-    </nav>
-    <video class="main_video" src="" controls></video>
-    <div class="description">
-      <div class="des_titlebox">
-        <ul class="hashtags">
-          <li>#DreamCoding</li>
-          <li>#DreamCoders</li>
-          <li>#Ellie</li>
-        </ul>
-        <ul class="title">
-          <li id="title">
-            Clone Coding Youtube Moblie Website 유튜브 모바일 웹사이트 따라만들기 | 프론트엔드 개발자 입문편 HTML,CSS,Javascript 드림코딩과 함께하는
-            프론트엔드 실전 입문편
+    </header>
+
+    <!-- Video Player -->
+
+    <section class="main_video">
+      <video src="vid/sample.mp4" controls></video>
+    </section>
+
+    <!-- Video Info -->
+    <div class="wider">
+      <section class="description">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#Jung Ma Sang</li>
+            <li>#Kimu Doe Hang</li>
+            <li>#Love Love</li>
+          </ul>
+
+          <div class="titlebox">
+            <span class="title clamp"
+              >Clone Coding Youtube Moblie Website 유튜브 모바일 웹사이트 따라만들기 | 프론트엔드 개발자 입문편 HTML,CSS,Javascript 드림코딩과
+              함께하는 프론트엔드 실전 입문편
+            </span>
+            <button class="Btn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+
+          <span class="viewers">1M views 1 month ago</span>
+        </div>
+
+        <!-- Actions -->
+
+        <ul class="actions">
+          <li>
+            <button class="likeBtn">
+              <i class="fas fa-thumbs-up"></i>
+              <span>0</span>
+            </button>
           </li>
-          <li id="triangle">
-            <a href="#"><i class="fas fa-caret-down"></i></a>
+          <li>
+            <button class="dislikeBtn"><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
           </li>
         </ul>
-      </div>
-      <div class="des_icons">
+
+        <!-- Channel Description -->
+
+        <div class="channel">
+          <div class="metadata">
+            <img src="/img/3x4.jpg" alt="" />
+            <div class="info">
+              <span class="name">MrLizard</span>
+              <span class="subscribers">1M subscribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <!-- Up Next -->
+
+      <section class="upnext">
+        <span>Up next</span>
         <ul>
-          <li><i class="fas fa-thumbs-up"></i>0</li>
-          <li><i class="fas fa-thumbs-down"></i>0</li>
-          <li><i class="fas fa-share"></i>Share</li>
-          <li><i class="fas fa-plus"></i>Save</li>
-          <li><i class="fab fa-font-awesome-flag"></i>Report</li>
+          <li class="nextvideo">
+            <div class="img"><img src="thumbnail.jpg" alt="thumbnail" class="thumbnail" /></div>
+
+            <div class="des">
+              <span class="title"> 아이고 이거 하느라고 죽는줄 알았어예 </span>
+
+              <span class="name"> MrLizard </span>
+
+              <span class="views">100M views</span>
+            </div>
+
+            <button class="Btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="nextvideo">
+            <div class="img"><img src="thumbnail.jpg" alt="thumbnail" class="thumbnail" /></div>
+            <div class="des">
+              <span class="title"> 미쬬니 사랑해❤ </span>
+
+              <span class="name"> MrLizard </span>
+              <span class="views">62K views</span>
+            </div>
+            <button class="Btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="nextvideo">
+            <div class="img"><img src="thumbnail.jpg" alt="thumbnail" class="thumbnail" /></div>
+            <div class="des">
+              <span class="title"> 여기엔 쓸말이 딱히 읎네 </span>
+
+              <span class="name"> MrLizard </span>
+              <span class="views">83K views</span>
+            </div>
+            <button class="Btn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
         </ul>
-      </div>
-      <div class="des_channal">
-        <span class="channal_logo">
-          <span class="channal_img">
-            <i class="fas fa-smile-wink"></i>
-          </span>
-          <span class="channal_title">
-            <div>드림코딩 by 엘리</div>
-            <div>1M subscribers</div>
-          </span>
-        </span>
-        <span class="subscribe"> SUBSCRIBE </span>
-      </div>
+      </section>
     </div>
   </body>
 </html>
