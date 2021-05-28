@@ -47,6 +47,10 @@ body .wider {
   flex-direction: column;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Header */
 
 header {
@@ -59,6 +63,10 @@ header {
 
 header .logo {
   font-size: var(--font-large);
+}
+
+header .logo .title {
+  font-weight: 450;
 }
 
 header .logo i {
