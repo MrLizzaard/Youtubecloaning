@@ -141,6 +141,10 @@ header .icons .fa-search {
   color: var(--grey-dark-color);
 }
 
+.description .actions span {
+  margin: 0 auto;
+}
+
 .description .actions i {
   margin: 0 auto;
   margin-bottom: calc(var(--padding) / 2);
@@ -198,6 +202,7 @@ header .icons .fa-search {
 
 .upnext {
   padding: 0 var(--padding);
+  margin-top: var(--padding);
 }
 
 .upnext > span {
@@ -212,7 +217,7 @@ header .icons .fa-search {
 }
 
 .upnext .nextvideo .img {
-  flex: 1 1 30%;
+  flex: 1 1 35%;
   margin-right: var(--padding);
 }
 
@@ -221,7 +226,7 @@ header .icons .fa-search {
 }
 
 .upnext .nextvideo .des {
-  flex: 1 1 65%;
+  flex: 1 1 60%;
   display: flex;
   flex-direction: column;
   font-size: var(--font-medium);
@@ -229,6 +234,7 @@ header .icons .fa-search {
 }
 
 .upnext .nextvideo .des .title {
+  flex: 1 1 80%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -237,18 +243,20 @@ header .icons .fa-search {
 }
 
 .upnext .nextvideo .des .name {
+  flex: 1 1 0%;
   font-size: var(--font-small);
   color: var(--grey-dark-color);
   margin-bottom: 2px;
 }
 
 .upnext .nextvideo .des .views {
+  flex: 0 0 20%;
   font-size: var(--font-micro);
   color: var(--grey-dark-color);
 }
 
 .upnext .nextvideo .Btn {
-  flex: 1 1 5%;
+  flex: 0 0 5%;
   height: 0;
 }
 
@@ -259,5 +267,6 @@ header .icons .fa-search {
 
   .upnext {
     max-width: 400px;
+    margin: 0;
   }
 }
